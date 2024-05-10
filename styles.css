@@ -1,0 +1,193 @@
+body{
+    background-color: aqua;
+}
+table {
+    border: 2px solid burlywood;
+    margin: 0 auto;
+}
+
+header h2 {
+    color: blue;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 1rem;
+    color: aliceblue;
+}
+
+nav.nav {
+    background-color: black;
+    text-align: center;
+}
+
+#main {
+    margin: 30px auto;
+    text-align: center;
+}
+
+aside  {
+    border: 10px dotted;
+    color: dimgrey;
+}
+
+
+aside, button {
+    color: cornflowerblue;
+}
+
+
+p ~ article {
+    background-color: lightgray;
+}
+
+
+* {
+    font-family: verdana;
+    font-weight: 800;
+}
+
+#hover:hover h3 {
+    background-color: yellow;
+    padding: 2px;
+}
+
+a:visited {
+    color: purple;
+}
+
+tr:first-child {
+    background-color: yellowgreen;
+}
+
+tr:hover td:first-child {
+    color: crimson;
+}
+
+p i:first-child {
+    color: blue;
+}
+
+p  i {
+    color: peru;
+}
+
+::selection {
+    color: greenyellow;
+}
+
+.paragraph::first-line {
+    color: red;
+}
+
+.paragraph::first-letter {
+    color: blue;
+}
+
+article::before,
+article::after {
+    content: url('https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif');
+    display: block;
+}
+10:09
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let me style to my will</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header id="hover">
+        <h1>I am the <span>main heading</span> and there should only be one of me </h1>
+
+        <nav class="nav">
+            <a href='#'>Can</a>
+            <a href='#'>You</a>
+            <a href='#'>Smell</a>
+            <a href='#'>What</a>
+            <a href='#'>The</a>
+            <a href='#'>Rock</a>
+            <a href='#'>Is</a>
+            <a href='#'>cooking?</a>
+        </nav>
+
+        <section>
+            <h2>I am excited</h2>
+        </section>
+
+    </header>
+
+    <br><br>
+    <hr>
+
+    <main id="main">
+
+        <p>These are the headings below in a paragraph tag</p>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Profession</th>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Johnson</td>
+                <td>maryjohnson@timbuktu.za</td>
+                <td>Scientist</td>
+            </tr>
+            <tr>
+                <td>Dennis</td>
+                <td>Jackson</td>
+                <td>dominiquejackson@anc.za</td>
+                <td>Corrupt Traffic cop</td>
+            </tr>
+        </table>
+        <br><br>
+        <table>
+            <tr>
+                <th>here</th>
+                <th>is</th>
+                <th>a</th>
+                <th>smaller</th>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td>with</td>
+                <td>certain</td>
+                <td>information</td>
+            </tr>
+        </table>
+    </main>
+
+    <br><br>
+    <div>
+        <p>Hover <i>over</i> me</p>
+        <h3>I wonder why this text is in the middle</h3>
+    </div>
+    <aside>
+        <p>This is a <i>child</i> element of the aside <i>element</i></p>
+        <article>
+            <h5>This is a h5 element inside of an article element</h5>
+            <p>However this is not a child of the aside tag but it is a descendant</p>
+        </article>
+        <p>I am also <i>paragraph</i> tag who is a <i>child</i> of the aside element</p>
+    </aside>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores explicabo architecto id.
+        Ratione asperiores eum ab vel, rerum minus quibusdam esse modi blanditiis quas voluptas architecto, ut
+        cupiditate expedita quis.</p>
+    <button class="firstBtn">I do understand</button>
+    <button class="secondBtn">I do not understand</button>
+    <br><br>
+    <hr>
+    <footer>
+        I am the trade mark or water mark at the bottom of the webpage.sss
+    </footer>
+</body>
+
+</html>
